@@ -1,0 +1,27 @@
+theme = "vim_dark_high_contrast"
+
+[keys.insert]
+";" = {";" = "normal_mode"}
+
+[keys.normal]
+H = "goto_first_nonwhitespace"
+L = "goto_line_end"
+
+[editor]
+true-color = true
+idle-timeout = 220
+line-number = "relative"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]

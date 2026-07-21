@@ -1,0 +1,12 @@
+[[language]]
+name = "go"
+roots = ["go.work", "go.mod"]
+file-types = ["go"]
+auto-format = true
+formatter = { command = "gofmt" }
+comment-token = "//"
+language-servers = ["gopls"]
+[language-server.gopls]
+command = "gopls"
+args = []
+config = { staticcheck = true, gofumpt = false }
