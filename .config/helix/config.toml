@@ -8,6 +8,11 @@ j = { k = "normal_mode"}
 [keys.normal]
 H = "goto_first_nonwhitespace"
 L = "goto_line_end"
+K = "hover"
+
+[keys.select]
+H = "goto_first_nonwhitespace"
+L = "goto_line_end"
 
 [editor]
 true-color = true

@@ -10,3 +10,13 @@ language-servers = ["gopls"]
 command = "gopls"
 args = []
 config = { staticcheck = true, gofumpt = false }
+
+[[language]]
+name = "java"
+roots = ["pom.xml"]
+file-types = ["java"]
+auto-format = true
+language-servers = ["jdtls"]
+[language-server.jdtls]
+command = "jdtls"
+
