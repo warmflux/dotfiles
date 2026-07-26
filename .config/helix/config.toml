@@ -1,6 +1,7 @@
 # theme = "vim_dark_high_contrast"
 # theme = "peachpuff"
-theme = "tokyonight"
+theme = "catppuccin_mocha"
+# theme = "tokyonight"
 
 [keys.insert]
 j = { k = "normal_mode"}
