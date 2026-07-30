@@ -3,7 +3,6 @@
 # theme = "catppuccin_mocha"
 # theme = "tokyonight_transparent"
 theme = "catppuccin_transparent"
-
 # theme = "nightwolf"
 
 [keys.insert]

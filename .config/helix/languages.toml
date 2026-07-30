@@ -19,4 +19,5 @@ auto-format = true
 language-servers = ["jdtls"]
 [language-server.jdtls]
 command = "jdtls"
-
+args = []
+environment = { "JAVA_HOME" = "/home/warmflux/.local/share/mise/installs/java/21.0.2" }
