@@ -1,7 +1,10 @@
 # theme = "vim_dark_high_contrast"
 # theme = "peachpuff"
-theme = "catppuccin_mocha"
-# theme = "tokyonight"
+# theme = "catppuccin_mocha"
+# theme = "tokyonight_transparent"
+theme = "catppuccin_transparent"
+
+# theme = "nightwolf"
 
 [keys.insert]
 j = { k = "normal_mode"}
@@ -10,10 +13,14 @@ j = { k = "normal_mode"}
 H = "goto_first_nonwhitespace"
 L = "goto_line_end"
 K = "hover"
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
 
 [keys.select]
 H = "goto_first_nonwhitespace"
 L = "goto_line_end"
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
 
 [editor]
 true-color = true
