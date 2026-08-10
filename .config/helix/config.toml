@@ -1,9 +1,10 @@
 # theme = "vim_dark_high_contrast"
 # theme = "peachpuff"
 # theme = "catppuccin_mocha"
-# theme = "tokyonight_transparent"
-theme = "catppuccin_transparent"
+theme = "tokyonight_transparent"
+# theme = "catppuccin_transparent"
 # theme = "nightwolf"
+# theme = "vim_transparent"
 
 [keys.insert]
 j = { k = "normal_mode"}
@@ -46,7 +47,8 @@ workspace-diagnostics = ["warning", "error"]
 
 [editor.cursor-shape]
 normal = "block"
-insert = "bar"
+# insert = "bar"
+insert = "block"
 select = "block"
 
 [editor.lsp]

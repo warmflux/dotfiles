@@ -11,6 +11,7 @@ command = "gopls"
 args = []
 config = { staticcheck = true, gofumpt = false }
 
+
 [[language]]
 name = "java"
 roots = ["pom.xml"]
@@ -21,3 +22,18 @@ language-servers = ["jdtls"]
 command = "jdtls"
 args = []
 environment = { "JAVA_HOME" = "/home/warmflux/.local/share/mise/installs/java/21.0.2" }
+
+
+[[language]]
+name = "rust"
+scope = "source.rust"
+injection-regex = "rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "rust-project.json"]
+auto-format = true
+formatter = { command = "rustfmt" }
+language-servers = ["rust-analyzer"]
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+checkOnSave = { command = "clippy" }
+config = {  completion = true }

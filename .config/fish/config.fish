@@ -17,3 +17,12 @@ function y
     end
     command rm -f -- "$tmp"
 end
+
+# ---- wails 自定义命令 ----
+function wdev
+    wails dev -tags webkit2_41
+end
+
+function wbuild
+    wails build -tags webkit2_41
+end
