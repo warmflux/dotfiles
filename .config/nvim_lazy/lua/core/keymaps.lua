@@ -10,7 +10,9 @@ vim.keymap.set("n", "k", function()
 end, { expr = true, silent = true, desc = "Up (wrap-aware)" })
 
 vim.keymap.set("n", "<leader>ch", ":nohlsearch<CR>", { desc = "Clear search highlights" })
+
 vim.keymap.set({ "n", "v" }, "s", "<Nop>", { desc = "ban s" })
+vim.keymap.set({ "n", "v" }, "S", "<Nop>", { desc = "ban S" })
 
 vim.keymap.set("i", "jk", "<ESC>", { silent = true, desc = "Exit insert mode" })
 vim.keymap.set("i", "kj", "<ESC>", { silent = true, desc = "Exit insert mode" })

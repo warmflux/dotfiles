@@ -7,6 +7,8 @@ return {
 			go = { "gofmt" },
 			rust = { "rustfmt" },
 			java = { lsp_format = "prefer" },
+			c = { lsp_format = "prefer" },
+			cpp = { lsp_format = "prefer" },
 			python = { "ruff_organize_imports", "ruff_format" },
 			javascript = { "prettier" },
 			typescript = { "prettier" },
@@ -18,7 +20,7 @@ return {
 
 		format_on_save = {
 			timeout_ms = 500,
-			lsp_format = "never", -- 完全禁用LSP格式化，避免冲突
+			-- lsp_format = "never", -- 完全禁用LSP格式化，避免冲突
 		},
 
 		formatters = {

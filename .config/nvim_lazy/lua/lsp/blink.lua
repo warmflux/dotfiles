@@ -30,7 +30,7 @@ return {
 		-- keymap = { preset = "default" },
 		keymap = {
 			preset = "none",
-			["<C-Space>"] = { "show", "hide" },
+			["<C-e>"] = { "cancel", "fallback" },
 			["<CR>"] = { "accept", "fallback" },
 			["<C-j>"] = { "select_next", "fallback" },
 			["<C-k>"] = { "select_prev", "fallback" },
@@ -48,5 +48,17 @@ return {
 		-- You may use a lua implementation instead by using `implementation = "lua"`
 		-- See the fuzzy documentation for more information
 		fuzzy = { implementation = "rust" },
+
+		cmdline = {
+			enabled = true,
+			keymap = {
+				preset = "none",
+				["<Tab>"] = { "show", "accept" },
+				["<C-j>"] = { "select_next", "fallback" },
+				["<C-k>"] = { "select_prev", "fallback" },
+			},
+
+			completion = { menu = { auto_show = false } },
+		},
 	},
 }

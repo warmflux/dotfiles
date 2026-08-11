@@ -5,7 +5,6 @@ return {
 	},
 
 	config = function()
-		-- 1. 前置补丁：LSP悬浮窗口圆角边框
 		do
 			local orig = vim.lsp.util.open_floating_preview
 			function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
@@ -15,9 +14,7 @@ return {
 			end
 		end
 
-		-- LSP 附加快捷键回调
 		local function lsp_on_attach(client, bufnr)
-			-- K 悬浮文档
 			vim.keymap.set(
 				"n",
 				"K",
@@ -90,6 +87,7 @@ return {
 		})
 		vim.lsp.enable("rust_analyzer")
 
+		-- java jdtls
 		vim.lsp.config("jdtls", {
 			cmd = { vim.fn.exepath("jdtls") },
 			settings = {
@@ -97,5 +95,28 @@ return {
 			},
 		})
 		vim.lsp.enable("jdtls")
+
+		-- c/cpp clangd
+		vim.lsp.config("clangd", {
+			cmd = { vim.fn.exepath("clangd") },
+			settings = {
+				format = {
+					enable = true,
+					style = "file",
+				},
+				completion = {
+					placeholder = true,
+					deduction = true,
+				},
+				diagnostics = {
+					unusedIncludes = true,
+					missingPrototypes = true,
+				},
+				index = {
+					standardLibrary = true,
+				},
+			},
+		})
+		vim.lsp.enable("clangd")
 	end,
 }
