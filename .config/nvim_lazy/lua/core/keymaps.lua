@@ -28,8 +28,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up (centered)" })
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without yanking" })
 -- vim.keymap.set({ "n", "v" }, "<leader>x", '"_d', { desc = "Delete without yanking" })
 
+vim.keymap.set({ "n", "x" }, "-", '"_', { noremap = true, desc = "Blackhole register prefix" })
+
 vim.keymap.set({ "n", "v" }, "x", '"_x', { silent = true, desc = "Delete char (no register copy)" })
-vim.keymap.set("n", "xx", [["_dd]], { silent = true, desc = "Delete line (no register copy)" })
+vim.keymap.set("n", "X", [["_dd]], { silent = true, desc = "Delete line (no register copy)" })
 
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })
@@ -61,6 +63,10 @@ vim.keymap.set("n", "<leader>pa", function() -- show file path
 	vim.fn.setreg("+", path)
 	print("file:", path)
 end, { desc = "Copy full file path" })
+
+vim.keymap.set("n", "<leader>ld", function()
+	vim.diagnostic.open_float({ scope = "line" })
+end, { noremap = true, silent = true, desc = "Open Line diagnostics" })
 
 vim.keymap.set("n", "<leader>td", function()
 	vim.diagnostic.enable(not vim.diagnostic.is_enabled())

@@ -54,12 +54,13 @@ return {
 				position = "right",
 			},
 		},
+		git = { enabled = false },
 		picker = { enabled = true },
 		quickfile = { enabled = true },
 		scope = { enabled = true },
-		scroll = { enabled = true },
+		scroll = { enabled = false },
 		statuscolumn = { enabled = true },
-		words = { enabled = true },
+		words = { enabled = false },
 		styles = {
 			notification = {
 				-- wo = { wrap = true } -- Wrap notifications
@@ -154,55 +155,55 @@ return {
 			desc = "Recent",
 		},
 		-- git
-		{
-			"<leader>gb",
-			function()
-				Snacks.picker.git_branches()
-			end,
-			desc = "Git Branches",
-		},
-		{
-			"<leader>gl",
-			function()
-				Snacks.picker.git_log()
-			end,
-			desc = "Git Log",
-		},
-		{
-			"<leader>gL",
-			function()
-				Snacks.picker.git_log_line()
-			end,
-			desc = "Git Log Line",
-		},
-		{
-			"<leader>gs",
-			function()
-				Snacks.picker.git_status()
-			end,
-			desc = "Git Status",
-		},
-		{
-			"<leader>gS",
-			function()
-				Snacks.picker.git_stash()
-			end,
-			desc = "Git Stash",
-		},
-		{
-			"<leader>gd",
-			function()
-				Snacks.picker.git_diff()
-			end,
-			desc = "Git Diff (Hunks)",
-		},
-		{
-			"<leader>gf",
-			function()
-				Snacks.picker.git_log_file()
-			end,
-			desc = "Git Log File",
-		},
+		-- {
+		-- 	"<leader>gb",
+		-- 	function()
+		-- 		Snacks.picker.git_branches()
+		-- 	end,
+		-- 	desc = "Git Branches",
+		-- },
+		-- {
+		-- 	"<leader>gl",
+		-- 	function()
+		-- 		Snacks.picker.git_log()
+		-- 	end,
+		-- 	desc = "Git Log",
+		-- },
+		-- {
+		-- 	"<leader>gL",
+		-- 	function()
+		-- 		Snacks.picker.git_log_line()
+		-- 	end,
+		-- 	desc = "Git Log Line",
+		-- },
+		-- {
+		-- 	"<leader>gs",
+		-- 	function()
+		-- 		Snacks.picker.git_status()
+		-- 	end,
+		-- 	desc = "Git Status",
+		-- },
+		-- {
+		-- 	"<leader>gS",
+		-- 	function()
+		-- 		Snacks.picker.git_stash()
+		-- 	end,
+		-- 	desc = "Git Stash",
+		-- },
+		-- {
+		-- 	"<leader>gd",
+		-- 	function()
+		-- 		Snacks.picker.git_diff()
+		-- 	end,
+		-- 	desc = "Git Diff (Hunks)",
+		-- },
+		-- {
+		-- 	"<leader>gf",
+		-- 	function()
+		-- 		Snacks.picker.git_log_file()
+		-- 	end,
+		-- 	desc = "Git Log File",
+		-- },
 		-- gh
 		-- {
 		-- 	"<leader>gi",
@@ -264,26 +265,26 @@ return {
 		},
 		-- search
 		{
-			'<leader>s"',
+			"<leader>sr",
 			function()
 				Snacks.picker.registers()
 			end,
 			desc = "Registers",
 		},
-		{
-			"<leader>s/",
-			function()
-				Snacks.picker.search_history()
-			end,
-			desc = "Search History",
-		},
-		{
-			"<leader>sa",
-			function()
-				Snacks.picker.autocmds()
-			end,
-			desc = "Autocmds",
-		},
+		-- {
+		-- 	"<leader>s/",
+		-- 	function()
+		-- 		Snacks.picker.search_history()
+		-- 	end,
+		-- 	desc = "Search History",
+		-- },
+		-- {
+		-- 	"<leader>sa",
+		-- 	function()
+		-- 		Snacks.picker.autocmds()
+		-- 	end,
+		-- 	desc = "Autocmds",
+		-- },
 		{
 			"<leader>sb",
 			function()
@@ -291,13 +292,13 @@ return {
 			end,
 			desc = "Buffer Lines",
 		},
-		{
-			"<leader>sc",
-			function()
-				Snacks.picker.command_history()
-			end,
-			desc = "Command History",
-		},
+		-- {
+		-- 	"<leader>sc",
+		-- 	function()
+		-- 		Snacks.picker.command_history()
+		-- 	end,
+		-- 	desc = "Command History",
+		-- },
 		{
 			"<leader>sC",
 			function()
@@ -382,27 +383,27 @@ return {
 		-- 	end,
 		-- 	desc = "Search for Plugin Spec",
 		-- },
-		{
-			"<leader>sq",
-			function()
-				Snacks.picker.qflist()
-			end,
-			desc = "Quickfix List",
-		},
-		{
-			"<leader>sR",
-			function()
-				Snacks.picker.resume()
-			end,
-			desc = "Resume",
-		},
-		{
-			"<leader>su",
-			function()
-				Snacks.picker.undo()
-			end,
-			desc = "Undo History",
-		},
+		-- {
+		-- 	"<leader>sq",
+		-- 	function()
+		-- 		Snacks.picker.qflist()
+		-- 	end,
+		-- 	desc = "Quickfix List",
+		-- },
+		-- {
+		-- 	"<leader>sR",
+		-- 	function()
+		-- 		Snacks.picker.resume()
+		-- 	end,
+		-- 	desc = "Resume",
+		-- },
+		-- {
+		-- 	"<leader>su",
+		-- 	function()
+		-- 		Snacks.picker.undo()
+		-- 	end,
+		-- 	desc = "Undo History",
+		-- },
 		{
 			"<leader>uC",
 			function()

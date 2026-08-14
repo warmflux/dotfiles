@@ -21,9 +21,7 @@ return {
 				vim.lsp.buf.hover,
 				{ buffer = bufnr, noremap = true, silent = true, desc = "LSP Hover Doc" }
 			)
-			vim.keymap.set("n", "<leader>ld", function()
-				vim.diagnostic.open_float({ scope = "line" })
-			end, { noremap = true, silent = true, buffer = bufnr, desc = "Open Line diagnostics" })
+
 			vim.keymap.set(
 				"n",
 				"<leader>ca",
@@ -82,6 +80,32 @@ return {
 					cargo = { buildScripts = { enable = true } },
 					procMacro = { enable = true },
 					completion = { autoImport = { enable = true } },
+					lens = {
+						debug = { enable = true },
+						enable = true,
+						implementations = { enable = true },
+						references = {
+							adt = { enable = true },
+							enumVariant = { enable = true },
+							method = { enable = true },
+							trait = { enable = true },
+						},
+						run = { enable = true },
+						updateTest = { enable = true },
+					},
+					checkOnSave = {
+						command = "clippy",
+						enable = true,
+					},
+					rename = {
+						enable = true,
+						crossFile = true,
+					},
+					codeAction = {
+						enable = true,
+						importGranularity = "crate",
+						importPrefix = "by_self",
+					},
 				},
 			},
 		})

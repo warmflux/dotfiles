@@ -1,5 +1,6 @@
 require("core.keymaps")
 require("core.options")
+require("core.autocmd")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -21,6 +22,7 @@ require("lazy").setup({
 	require("plugins.whichkey"),
 	require("plugins.lualine"),
 	require("plugins.mini"),
+	require("plugins.gitsigns"),
 
 	require("lsp.blink"),
 	require("lsp.lspconfig"),
