@@ -28,3 +28,9 @@ require("lazy").setup({
 	require("lsp.lspconfig"),
 	require("lsp.conform"),
 })
+
+vim.api.nvim_set_hl(0, "SnacksPicker", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksPickerInput", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksBackdrop", { bg = "NONE" })

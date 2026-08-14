@@ -68,6 +68,10 @@ vim.keymap.set("n", "<leader>ld", function()
 	vim.diagnostic.open_float({ scope = "line" })
 end, { noremap = true, silent = true, desc = "Open Line diagnostics" })
 
+vim.keymap.set("n", "<leader>q", function()
+	vim.diagnostic.setloclist({ open = true })
+end, { desc = "Open diagnostic list" })
+
 vim.keymap.set("n", "<leader>td", function()
 	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 end, { desc = "Toggle diagnostics" })
