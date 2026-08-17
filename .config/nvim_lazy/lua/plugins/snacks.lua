@@ -10,7 +10,7 @@ return {
 			sections = {
 				{
 					section = "terminal",
-					cmd = "chafa ~/dotfiles/Wallpapers/【哲风壁纸】jk-人像-写实美女.png --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
+					cmd = "chafa ~/dotfiles/Wallpapers/【哲风壁纸】二次元-侧脸-光影.jpg --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
 					height = 17,
 					padding = 1,
 				},
@@ -55,7 +55,9 @@ return {
 			},
 		},
 		git = { enabled = false },
-		picker = { enabled = true },
+		picker = {
+			enabled = true,
+		},
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		scroll = { enabled = false },

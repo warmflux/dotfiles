@@ -27,3 +27,18 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 		pcall(vim.api.nvim_win_set_cursor, 0, last_pos)
 	end,
 })
+
+vim.api.nvim_create_autocmd("Colorscheme", {
+	callback = function()
+		vim.api.nvim_set_hl(0, "Cursor", { bg = "#cdd6f4" })
+		vim.api.nvim_set_hl(0, "Cursor2", { bg = "#89b4fa" })
+		if package.loaded["snacks"] then
+			vim.api.nvim_set_hl(0, "SnacksPicker", { bg = "NONE" })
+			vim.api.nvim_set_hl(0, "SnacksPickerInput", { bg = "NONE" })
+			vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "NONE" })
+			vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { bg = "NONE" })
+			vim.api.nvim_set_hl(0, "SnacksBackdrop", { bg = "NONE" })
+			vim.api.nvim_set_hl(0, "SnacksNormalNC", { bg = "NONE" })
+		end
+	end,
+})
