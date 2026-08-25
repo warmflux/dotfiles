@@ -27,4 +27,5 @@ require("lazy").setup({
 	require("lsp.blink"),
 	require("lsp.lspconfig"),
 	require("lsp.conform"),
+  require("lsp.mason"),
 })

@@ -6,8 +6,7 @@ starship init fish | source
 mise activate fish | source
 # set -U fish_user_paths (go env GOPATH)/bin $fish_user_paths
 
-set -gx EDITOR hx
-set -gx VISUAL hx
+set -gx EDITOR nvim
 
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
