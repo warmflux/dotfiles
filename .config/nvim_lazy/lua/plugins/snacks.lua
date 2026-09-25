@@ -7,19 +7,19 @@ return {
 		bigfile = { enabled = true },
 		dashboard = {
 			enabled = true,
-			sections = {
-				{
-					section = "terminal",
-					cmd = "chafa ~/dotfiles/Wallpapers/【哲风壁纸】二次元-侧脸-光影.jpg --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
-					height = 17,
-					padding = 1,
-				},
-				{
-					pane = 2,
-					{ section = "keys", gap = 1, padding = 1 },
-					{ section = "startup" },
-				},
-			},
+			-- sections = {
+			-- 	{
+			-- 		section = "terminal",
+			-- 		cmd = "chafa ~/dotfiles/Wallpapers/【哲风壁纸】二次元-侧脸-光影.jpg --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
+			-- 		height = 17,
+			-- 		padding = 1,
+			-- 	},
+			-- 	{
+			-- 		pane = 2,
+			-- 		{ section = "keys", gap = 1, padding = 1 },
+			-- 		{ section = "startup" },
+			-- 	},
+			-- },
 		},
 		explorer = { enabled = true },
 		indent = {

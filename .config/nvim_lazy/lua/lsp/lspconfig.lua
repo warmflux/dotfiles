@@ -2,7 +2,7 @@ return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		"saghen/blink.cmp",
-    "mason-org/mason.nvim",
+		"mason-org/mason.nvim",
 	},
 	config = function()
 		local diagnostic_signs = {
@@ -126,12 +126,11 @@ return {
 		})
 
 		vim.lsp.enable({
+			"ts_ls",
 			"lua_ls",
 			"jdtls",
 			"clangd",
-			"rust_analyzer",
 			"gopls",
-      "pyright",
 		})
 	end,
 }
