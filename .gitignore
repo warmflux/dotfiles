@@ -7,3 +7,4 @@
 .config/.emacs.d/history
 .config/.emacs.d/recentf
 .config/.emacs.d/tree-sitter
+.config/.emacs.d/elpa

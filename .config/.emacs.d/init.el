@@ -37,7 +37,7 @@
 (load-file custom-file)
 
 
-(add-to-list 'default-frame-alist '(font . "ComicShannsMono Nerd Font-15"))
+(add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font-15"))
 
 (electric-pair-mode 1)
 (fido-vertical-mode 1)
@@ -115,9 +115,9 @@
 (global-set-key (kbd "C-c m s") 'magit-status)
 (global-set-key (kbd "C-c m l") 'magit-log)
 
-(require 'helm)
-(setq helm-ff-transformer-show-only-basename nil)
-(global-set-key (kbd "C-c h t") 'helm-cmd-t)
-(global-set-key (kbd "C-c h g g") 'helm-git-grep)
-(global-set-key (kbd "C-c h f") 'helm-find)
-(global-set-key (kbd "C-c h r") 'helm-recentf)
+; (require 'helm)
+; (setq helm-ff-transformer-show-only-basename nil)
+; (global-set-key (kbd "C-c h t") 'helm-cmd-t)
+; (global-set-key (kbd "C-c h g g") 'helm-git-grep)
+; (global-set-key (kbd "C-c h f") 'helm-find)
+; (global-set-key (kbd "C-c h r") 'helm-recentf)
