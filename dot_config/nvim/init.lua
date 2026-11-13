@@ -15,7 +15,7 @@
 --     treesitter.lua      语法高亮与折叠（nvim-treesitter）
 --     theme.lua           配色主题（catppuccin）
 --     oil.lua             文件管理器（oil.nvim）
---     command.lua         将cmdline弹窗置于编辑器中间（tiny-cmdline.nvim）
+--     smear-cursor        光标丝滑插件
 --
 -- 加载顺序约定：
 --   1. core 全部先加载。keymaps 定义 <leader>，凡是用到 <leader> 的文件
@@ -42,4 +42,4 @@ require("plugins.lsp")
 require("plugins.treesitter")
 require("plugins.theme")
 require("plugins.oil")
-require("plugins.command")
+require("plugins.cursor_animation")
